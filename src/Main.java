@@ -7,8 +7,10 @@ public class Main {
         List<Book> livros = new DatasetReader().readDataset("src/data.csv");
 
         for(Book x :livros)
+
         {
-            System.out.println(x.getTitle());
+            if (x.getAuthor().equals("J.K. Rowling"))
+                System.out.println(x.getTitle());
         }
     }
 }
